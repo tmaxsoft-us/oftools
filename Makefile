@@ -3,7 +3,7 @@ init:
 
 uninstall:
 	pip3 uninstall oftools
-	rm dist build oftools.egg-info -r
+	rm dist build oftools.egg-info .eggs -r
 
 install:
 	python3 setup.py sdist bdist_wheel
@@ -13,7 +13,7 @@ upload:
 	python3 setup.py sdist upload -r pypi
 
 test_upload:
-	python3 setup.py sdist upload -r pypitest
+	python3 setup.py sdist upload -r testpypi
 
 remove:
 	echo "curl --form ":action=remove_pkg" --form "name=oftools" --form "version=0.0.1" URL -u id:pass"

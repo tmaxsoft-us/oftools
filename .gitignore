@@ -1,0 +1,15 @@
+.idea/
+dist/
+build/
+__pycache__/
+*.egg-info/
+.vscode/
+.pytest_cache/
+.eggs/
+*.coverage
+*.swp
+*.html
+*.pdf
+*.pyc
+AUTHORS
+ChangeLog
